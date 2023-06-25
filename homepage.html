@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple Quiz Game</title>
+	<link rel="stylesheet" href="css/myStyle.css" />
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<!-- the start quiz button -->
+	<div class="startButton">
+		<button>start Quiz!</button>
+	</div>
+	
+	
+	<!-- the informatio box here.. -->
+	<div class="infoBox">
+		<div class="infoTitle">
+			<span>Some usefull rules about the game.</span>
+		</div>
+		<div class="infoList">
+			<div class="info">1. You will have only <span>15 seconds</span>per each question.</div>
+			<div class="info">2. Once you select your answer, you cant reselect.</div>
+			<div class="info">3. You can't select any option once time goes off.</div>
+			<div class="info">4. You can't exit from the quiz while you are playing.</div>
+			<div class="info">5. You will get points on the basis of your correct answer.</div>
+		</div>
+		<div class="buttons">
+			<button class="quitBtn">Exit Quiz</button>
+			<button class="restartBtn">Continue</button>
+		</div>
+	</div>
+	
+	<!-- the Quiz box -->
+	<div class="quizBox">
+		<header>
+			<div class="title">A simple Quiz Box</div>
+			<div class="timer">
+				<div class="timeText">Time Left</div>
+				<div class="timerSeconds">15</div>
+			</div>
+		</header>
+		<section>
+			<div class="questionText">
+				<span>What does HTML stand for?</span>
+			</div>
+			<div class="optionList">
+				<div class="option">
+					<span>Hyper Text Preprocessor</span>
+					<div class="icon check"><i class="fas fa-check"></i></div>
+				</div>
+				<div class="option">
+					<span>Hyper Text Markup Language</span>
+					<div class="icon cross"><i class="fas fa-times"></i></div>
+				</div>
+				<div class="option">
+					<span>Hyper Text Multiple Language</span>
+				</div>
+				<div class="option">
+					<span>Hyper Tool Multiple Language</span>
+				</div>
+		</section>
+		
+		<!-- Quizbox footer -->
+		<footer>
+			<div class="totalQue">
+				<span><p>2</p>of<p>5</p>Questions</span>
+			</div>
+			<button class="nextButton">Next Question</button>
+		</footer>
+	</div>
+	
+	
+	<!-- Summarize the results -->
+	<div class="resBox">
+		<div class="icon">
+			<i class="fas fa-crown"></i>
+		</div>
+		<div class="completeText">You have complete the quiz!</div>
+		<div class="scoreText">
+			<span>and sorry, you got only <p>2</p>out of <p>5</p></span>
+		</div>
+		<div class="buttons">
+			<button class="restart">replay quiz</button>
+			<button class="quit">quit quiz</button>
+		</div>
+	</div>
+</body>
+</html>
